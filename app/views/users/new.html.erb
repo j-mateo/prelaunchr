@@ -1,7 +1,9 @@
-<div class="hero">
-    <p class="large brandon">Harry&#8217;s is live</p>
-    <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
-</div>
+<!-- Header -->
+<%= stylesheet_link_tag "main", :media => "all" %>
+<header id="header">
+    <h1>Yoga Pants Club</h1>
+    <p>Receive a new pair of premium yoga pants every month for just $19.95/month</p>
+</header>
 
 <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
     <% if Rails.application.config.ended %>
@@ -11,10 +13,10 @@
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <div class="key"></div>
-        <p class="byline brandon">Be the first to know</p>
-        <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+        <p class="byline brandon">Step inside to get a <strong>free pair!</strong></p>
+        <%= form_for @user,:url => { :action => "create" } do |f| %>
+            <%= f.text_field :email, :placeholder => "Enter Email", :required => "required" %>
+            <input name="commit" type="submit" value="Step Inside" />
         <% end %>
     <% end %>
 </div>

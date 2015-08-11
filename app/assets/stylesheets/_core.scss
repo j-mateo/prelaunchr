@@ -32,7 +32,7 @@ html.home{
 	width: 100%;
 	height: 446px;
 	background: image-url("home/hero.jpg") center center no-repeat;
-	background-size: 1600px 446px;
+	background-size: cover;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
@@ -42,9 +42,9 @@ html.home{
 #home .hero .large{
 	font-weight: bold;
 	font-size: 40px;
-	color: #074E6F;
+	color: #1cb495;
 	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	margin: 85px 0 0 0;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
@@ -54,7 +54,7 @@ html.home{
 	font-weight: bold;
 	color: #955F5D;
 	font-size: 18px;
-	margin: 10px 0 0 115px;
+	margin: 10px 0 0 0;
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
@@ -81,7 +81,7 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #1cb495;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -92,7 +92,7 @@ html.home{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #1cb495;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -100,7 +100,7 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #1cb495;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -119,7 +119,7 @@ html.home{
 #home .form-wrap.ended .thanks{
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: #1cb495;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -147,7 +147,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: #1cb495;
 	font-size: 19px;
 	font-weight:bold;
 	text-transform: uppercase;
@@ -175,7 +175,7 @@ html.home{
 #home .form-wrap.ended .thanks{
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #074e6f;
+	color: #1cb495;
 	text-align: center;
 	font-size: 22px;
 	letter-spacing: 1px;
@@ -203,7 +203,7 @@ html.home{
 }
 
 #home .form-wrap.ended .go-to a{
-	color: #074e6f;
+	color: #1cb495;
 	font-size: 19px;
 	font-weight:bold;
 	text-transform: uppercase;
@@ -248,7 +248,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #1cb495;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -274,19 +274,14 @@ html.home{
 
 #refer .header .logo{
 	font-weight: normal;
-	font-size: 0;
-	line-height: 0;
-	margin-right: 14px;
+	font-size: 1.7em;
+
+	font-family: 'Helvetica', sans-serif;
 	letter-spacing: 1px;
-	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+	margin-top: 0;
 }
 
 #refer .hero{
-	background: #F1F0EE;
 	height: 391px;
 	overflow: hidden;
 }
@@ -294,8 +289,11 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/mammoth.png") 0 0 no-repeat;
-	background-size: 610px 394px;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-image: url("http://www.trbimg.com/img-5489e877/turbine/bal-fashion-5-devon-maryn-activewear-and-much-more-20141209");
+	background-repeat: no-repeat;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
@@ -335,7 +333,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #1cb495;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -403,7 +401,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #1cb495;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -451,7 +449,7 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #1cb495;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
@@ -472,7 +470,7 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
+	color: #1cb495;
 	width: 125px;
 	margin-right: 129px;
 	float: left;
@@ -540,14 +538,14 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	background: #1cb495;
+	border-color: #1cb495;
 }
 
 #refer .prizes .products li.product .tooltip{
 	height: 254px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 4px solid #1cb495;
 	position: absolute;
 	top: -285px;
 	left: -32px;
@@ -567,7 +565,7 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #1cb495;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;

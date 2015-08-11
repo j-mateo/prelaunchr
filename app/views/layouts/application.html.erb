@@ -8,7 +8,6 @@
         <title>Harry&#8217;s &ndash; Tell Friends, Shave for Free</title>
         <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
         <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-
         <meta property="og:title" content="Harry’s is coming!"/>
         <meta property="og:description" content="Shaving is evolving. Didn’t want to leave you all behind. Check out Harry’s here."/>
         <meta property="og:image" content="<%= asset_path("refer/truman.png") %>"/>
@@ -20,13 +19,25 @@
                 <meta name="viewport" content="width=1120" />
             <% end %>
         <% end %>
-        <%= stylesheet_link_tag "application", :media => "all" %>
         <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">
 
 <%= yield %>
 
+<!-- Footer -->
+<footer id="footer">
+    <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>
+    <ul class="copyright">
+        <li>&copy;2015 Yoga Pant Club</li>
+    </ul>
+</footer>
 
+<%= javascript_include_tag 'main' %>
 </body>
 </html>
